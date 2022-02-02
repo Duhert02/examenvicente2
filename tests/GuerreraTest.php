@@ -9,20 +9,6 @@ class TestGuerrea extends TestCase{
         $this->op = new Guerrera("Astrid", 30 ,"alive");
     }
 
-      public function testHeridaAlive(){
-        $this->assertEquals("alive",$this->herida());
-
-    }
-    public function testHeridaDead(){
-        $this->assertEquals("dead",$this->op->herida(9,'alive'));
-      
-    }
-
-    public function testPocionViva(){
-        $this->assertEquals("dead",$this->op->pocion(-11,'dead'));
-    
-    }
-
     public function testPocionMuerta(){
         $this->assertEquals("alive",$this->op->pocion(-9,'dead'));
      
