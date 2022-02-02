@@ -41,13 +41,13 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
     - name: Build
       run: |
-        docker build -t ${{ secrets.DOCKER_USER }}/examenvicente2:${{ github.sha }} .
-        docker build -t ${{ secrets.DOCKER_USER }}/examenvicente2:latest .
+        docker build -t ${{ secrets.DOCKER_USER }}/guerrerajdg:${{ github.sha }} .
+        docker build -t ${{ secrets.DOCKER_USER }}/guerrerajdg:latest .
       #- name: Tags
        # run: |
-        #  docker tag back ${{ secrets.DOCKER_USER }}/examenvicente2:${{ github.sha }}
-         # docker tag back ${{ secrets.DOCKER_USER }}/examenvicente2:latest
+        #  docker tag back ${{ secrets.DOCKER_USER }}/guerrerajdg:${{ github.sha }}
+         # docker tag back ${{ secrets.DOCKER_USER }}/guerrerajdg:latest
     - name: Push
       run:  |
-        docker push ${{ secrets.DOCKER_USER }}/examenvicente2:${{ github.sha }}
-        docker push ${{ secrets.DOCKER_USER }}/examenvicente2:latest
+        docker push ${{ secrets.DOCKER_USER }}/guerrerajdg:${{ github.sha }}
+        docker push ${{ secrets.DOCKER_USER }}/guerrerajdg:latest
