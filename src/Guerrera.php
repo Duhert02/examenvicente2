@@ -13,8 +13,8 @@ class Guerrera
         if ($vida <= 0) {
             $estado =='dead';
         }
-        return $this->estado
-        return $this->vida
+        return $this->estado;
+        return $this->vida;
     }
 
     public function pocion($vida,$estado){
@@ -22,7 +22,7 @@ class Guerrera
         if ($vida > 0 && $estado == 'dead'){
             $estado = 'alive';
         }
-        return $this->estado
-        return $this->vida
+        return $this->estado;
+        return $this->vida;
     }
 }
