@@ -7,12 +7,14 @@ class Guerrera
 
     public function __construct(){}
 
-    
+
     public function herida($vida,$estado){
         $vida-=10;
         if ($vida <= 0) {
             $estado =='dead';
         }
+        return $this->estado
+        return $this->vida
     }
 
     public function pocion($vida,$estado){
@@ -20,6 +22,7 @@ class Guerrera
         if ($vida > 0 && $estado == 'dead'){
             $estado = 'alive';
         }
+        return $this->estado
+        return $this->vida
     }
 }
-?>
