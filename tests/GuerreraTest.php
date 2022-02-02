@@ -10,7 +10,7 @@ class TestGuerrea extends TestCase{
     }
 
     public function testHeridaAlive(){
-        $this->assertEquals("alive",$this->herida(11,'alive'));
+        $this->assertEquals("alive",$this->op->herida(11,'alive'));
 
     }
 
