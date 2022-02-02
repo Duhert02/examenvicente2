@@ -6,11 +6,11 @@ class TestGuerrea extends TestCase{
     private $op;
 
     public function setUp():void{
-        $this->op = new Guerrera();
+        $this->op = new Guerrera("Astrid", 30 ,"alive");
     }
 
     public function testHeridaAlive(){
-        $this->assertEquals("alive",$this->op->herida(11,'alive'));
+        $this->assertEquals("alive",$this->herida(10,'alive'));
 
     }
 
