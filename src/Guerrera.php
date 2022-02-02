@@ -14,7 +14,7 @@ class Guerrera
             $estado =='dead';
         }
         return $this->estado;
-        return $this->vida;
+        
     }
 
     public function pocion($vida,$estado){
@@ -23,6 +23,7 @@ class Guerrera
             $estado = 'alive';
         }
         return $this->estado;
-        return $this->vida;
+        
     }
 }
+?>
