@@ -10,21 +10,21 @@ class TestGuerrea extends TestCase{
     }
 
     public function testHeridaAlive(){
-        $this->assertEquals(1,'alive',$this->op->herida(11,'alive'));
+        $this->assertEquals('alive',$this->op->herida(11,'alive'));
     
     }
 
     public function testHeridaDead(){
-        $this->assertEquals(-1,'dead',$this->op->herida(9,'alive'));
+        $this->assertEquals('dead',$this->op->herida(9,'alive'));
              
     }
 
     public function testPocionViva(){
-        $this->assertEquals(-1,'dead',$this->op->pocion(-11,'dead'));
+        $this->assertEquals('dead',$this->op->pocion(-11,'dead'));
     }
 
     public function testPocionMuerta(){
-        $this->assertEquals(1,'alive',$this->op->pocion(-9,'dead'));
+        $this->assertEquals('alive',$this->op->pocion(-9,'dead'));
     }
 
 }
